@@ -1,7 +1,8 @@
 import { IChangesObject } from 'angular'
-import assign = require('lodash/assign')
-import mapValues = require('lodash/mapValues')
-import some = require('lodash/some')
+import _ = require('lodash')
+import assign = _.assign
+import mapValues = _.mapValues
+import some = _.some
 
 type OnChanges<T> = {
   [K in keyof T]: IChangesObject<T[K]>
